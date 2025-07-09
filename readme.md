@@ -29,7 +29,7 @@ A RESTful API for managing a library's book collection and borrowing system, bui
 ### Borrow API
 
 - `POST /api/borrow`: Borrow a book
-- Additional borrowing endpoints (get, return, etc.)
+- `GET /api/borrow`: Borrow books summary
 
 ## Data Models
 
