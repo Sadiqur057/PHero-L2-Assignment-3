@@ -37,6 +37,10 @@ bookRoutes.get("/", async (req: Request, res: Response) => {
     query.push({
       $limit: parseInt(limit as string),
     });
+  }else {
+    query.push({
+      $limit: 10,
+    });
   }
   try {
     const books = await Book.aggregate(query);
